@@ -3,7 +3,7 @@ import { FlatList, StyleSheet, Text, View } from 'react-native';
 import { connect } from 'react-redux';
 import { AppState, getRecords } from './reducers';
 
-const ListRecords = props => {
+const ListRecords = (props: any) => {
   useEffect(() => {
     props.getRecords();
   }, []);
